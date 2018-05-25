@@ -26,28 +26,30 @@
     </nav>
 
     <main>
-        <h1>Franklin, ID</h1>
-        <ul>
-            <li><b>Zip:</b>83237</li>
-            <li><b>Elevation:</b>4968 ft.</li>
-            <li><b>Location:</b>111.79, 42.07</li>
-        </ul>
-        <div>
-            <section class="content-box">
+        <h1 id="locName">Franklin, ID</h1>
+        <section id="locInfo">
+            <ul>
+                <li><b>Zip:</b>83237</li>
+                <li><b>Elevation:</b>4968 ft.</li>
+                <li><b>Location:</b>111.79, 42.07</li>
+            </ul>
+        </section>
+        <div id="curWeather">
+            <section id="temps" class="content-box">
                 <h2>Temperature: 55</h2>
                 <p>High:64</p>
                 <p>Low:41</p>
             </section>
-            <section class="content-box">
+            <section id="wind" class="content-box">
                 <h2>Wind: 5mph</h2>
                 <p>Direction: SW</p>
                 <p>Gusts: 0mph</p>
             </section>
-            <section class="content-box">
+            <section id="summary" class="content-box">
                 <h2>Rain</h2>
             </section>
         </div>
-        <div class="content-box">
+        <section id="hourly" class="content-box">
             <h2>Hourly Forecast</h2>
             <ul>
                 <li>0: 41 |</li>
@@ -75,7 +77,7 @@
                 <li>22: 52 |</li>
                 <li>23: 48 |</li>
             </ul>
-        </div>
+        </section>
     </main>
 
     <footer id="page-footer">

@@ -21,8 +21,19 @@
 
 /* 2.General Rules that apply to all devices */
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
 }
 
 h1,
@@ -31,5 +42,5 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Sansita, sans-serif;
+    font-family: Sansita, Eurostyle, sans-serif;
 }
