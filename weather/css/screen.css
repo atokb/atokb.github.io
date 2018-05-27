@@ -101,6 +101,14 @@ nav ul li a {
     border-radius: 15px;
 }
 
+#temps #high-temp {
+    color: red;
+}
+
+#temps #low-temp {
+    color: #0e89d5;
+}
+
 #hourly {
     margin: .2em auto;
     border: 1px solid;
