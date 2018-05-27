@@ -1,46 +1,65 @@
-/* CSS for Screened Devices
+    /* CSS for Screened Devices
 1.Mobile First CSS
 2.General Rules that apply to all devices
 3.Write larg(er) CSS using media queries 
 */
-
-
-/* 1.  Includes (fonts and supplementary stylesheets) */
-
-
-/* 1.1 Normalize Import */
-
-@import url('normalize.css');
-
-/*1.2 Google Font Import*/
-
-@import url('https://fonts.googleapis.com/css?family=Sansita');
-
-/* 1. Mobile First Rules */
-
-
-/* 2.General Rules that apply to all devices */
-
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Sansita, Eurostyle, sans-serif;
-}
+    /* 1.  Includes (fonts and supplementary stylesheets) */
+    /* 1.1 Normalize Import */
+    
+    @import url('normalize.css');
+    /*1.2 Google Font Import*/
+    
+    @import url('https://fonts.googleapis.com/css?family=Sansita');
+    /* 1. Mobile First Rules */
+    /* 2.General Rules that apply to all devices */
+    
+    html {
+        box-sizing: border-box;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    body {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 20px;
+    }
+    
+    #site-brand {
+        font-size: 2em;
+        font-weight: 600;
+    }
+    
+    nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: Sansita, Eurostyle, sans-serif;
+    }
+    
+    .tile {
+        background-color: rgba(200, 200, 200, .6);
+        margin: .2em auto;
+        border: 1px solid;
+        border-radius: 15px;
+    }
+    
+    footer {
+        margin-bottom: 2em;
+    }
