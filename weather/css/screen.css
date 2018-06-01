@@ -122,3 +122,8 @@ nav ul li a {
 footer {
     margin-bottom: 2em;
 }
+
+
+/* #3 - CSSS for larger screen sizes */
+
+@media screen and (min-width: 786px) {}
