@@ -61,7 +61,8 @@ h6 {
 /*Header styling*/
 
 #page-header {
-    display: inline;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 #site-brand {
@@ -73,7 +74,8 @@ h6 {
 /*nav styling*/
 
 nav ul li {
-    display: inline-block;
+    display: inline-flex;
+    flex-flow: row nowrap;
     list-style: none;
     padding: 0px 2px;
 }
@@ -90,7 +92,8 @@ nav ul li a {
 }
 
 #locInfo ul li {
-    display: inline;
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
 }
 
