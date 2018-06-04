@@ -74,9 +74,10 @@ h6 {
 /*nav styling*/
 
 nav ul li {
-    display: flex;
+    display: inline-flex;
     flex-flow: row nowrap;
     list-style: none;
+    justify-content: space-around;
 }
 
 nav ul li a {
@@ -118,7 +119,7 @@ nav ul li a {
 }
 
 #hourly ul li {
-    display: flex;
+    display: inline-flex;
     flex-flow: row nowrap;
 }
 
