@@ -107,6 +107,10 @@ nav ul li a {
     border-radius: 15px;
 }
 
+#temp-value {
+    font-size: 2em;
+}
+
 #temps #high-temp {
     color: red;
 }
