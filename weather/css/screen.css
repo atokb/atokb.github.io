@@ -73,7 +73,9 @@ h6 {
 
 /*nav styling*/
 
-nav ul li {
+nav ul {
+    padding: 0;
+    margin: 0;
     display: inline-flex;
     flex-flow: row nowrap;
     list-style: none;
