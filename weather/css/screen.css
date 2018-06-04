@@ -77,7 +77,7 @@ nav ul li {
     display: flex;
     flex-flow: row nowrap;
     list-style: none;
-    padding: 0px 2px;
+    justify-content: space-between;
 }
 
 nav ul li a {
