@@ -140,11 +140,21 @@ nav ul li a {
     margin: .2em auto;
     border: 1px solid;
     border-radius: 15px;
+    position: relative;
 }
 
 #hourly h2 {
     padding: 0px 40px;
 }
+
+
+/* #hourly h2::before {
+    content: ">";
+    font-size: 2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+} This is for the sliding arrow in the hourly box*/
 
 #hourly ul li {
     display: inline-flex;
@@ -158,4 +168,15 @@ footer {
 
 /* #3 - CSSS for larger screen sizes */
 
-@media screen and (min-width: 786px) {}
+@media screen and (min-width: 786px) {
+    nav {
+        position: fixed;
+        /* bottom: 0;
+        left: 0; */
+        background-color: #fff;
+        width: 100%;
+    }
+    .hide {
+        visibility: visible;
+    }
+}
