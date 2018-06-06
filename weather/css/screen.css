@@ -179,4 +179,9 @@ footer {
     .hide {
         visibility: visible;
     }
+    #temp-value {
+        font-size: 10vw;
+        margin: 0;
+        margin-left: -15vw;
+    }
 }
