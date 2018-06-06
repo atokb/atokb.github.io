@@ -169,19 +169,23 @@ footer {
 /* #3 - CSSS for larger screen sizes */
 
 @media screen and (min-width: 786px) {
-    nav {
+    /* nav {
         position: fixed;
-        /* bottom: 0;
-        left: 0; */
-        background-color: #fff;
-        width: 100%;
-    }
-    .hide {
-        visibility: visible;
-    }
-    #temp-value {
-        font-size: 10vw;
-        margin: 0;
-        margin-left: -10vw;
-    }
+        bottom: 0;
+        left: 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+.hide {
+    visibility: visible;
+}
+
+#temp-value {
+    font-size: 10vw;
+    margin: 0;
+    margin-left: -10vw;
+}
+
+*/
 }
