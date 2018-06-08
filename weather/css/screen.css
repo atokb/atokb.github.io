@@ -67,8 +67,10 @@ h6 {
 }
 
 #site-brand {
-    font-size: 2em;
+    white-space: nowrap;
     font-weight: bolder;
+    font-size: 1.5em;
+    margin: 30px 0px 0px 10px;
 }
 
 
@@ -92,10 +94,15 @@ nav ul li a {
 /*main styling*/
 
 #locInfo ul {
+    padding: 0;
+    margin: 0;
     display: flex;
-    /*     flex-direction: row; */
-    list-style-type: none;
-    font-size: 2vw;
+    list-style: none;
+}
+
+#locInfo ul li {
+    display: flex;
+    font-size: 11px;
 }
 
 #curWeather .tile {
@@ -106,9 +113,9 @@ nav ul li a {
 }
 
 #temp-value {
-    font-size: 10vw;
+    font-size: 3em;
     margin: 0;
-    margin-left: -25vw;
+    margin-left: -4em;
 }
 
 #temps div {
