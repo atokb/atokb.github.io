@@ -159,13 +159,15 @@ nav ul li a {
 }
 
 
-/* #hourly h2::before {
+/* This is for the sliding arrow in the hourly box*/
+
+#hourly h2::before {
     content: ">";
     font-size: 2em;
     position: absolute;
     right: 0;
     top: 0;
-} This is for the sliding arrow in the hourly box*/
+}
 
 #hourly ul {
     display: inline-flex;
