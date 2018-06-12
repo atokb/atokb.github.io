@@ -61,7 +61,14 @@ h6 {
 
 /*Header styling*/
 
-#page-header {}
+#page-header {
+    display: flex;
+}
+
+#page-header #site-brand {
+    font-size: 6vw;
+    margin-top: 8vh;
+}
 
 
 /*nav styling*/
@@ -78,6 +85,7 @@ nav ul li a {
     text-decoration: none;
     display: flex;
     padding: 12px;
+    font-size: 3vw;
 }
 
 
@@ -103,14 +111,15 @@ nav ul li a {
 }
 
 #temp-value {
-    font-size: 3em;
+    font-size: 5em;
     margin: 0;
-    margin-left: -4em;
+    margin-left: -5.3em;
 }
 
 #temps div {
     display: flex;
     justify-content: center;
+    margin-left: -2em;
 }
 
 #temps #high-temp {
@@ -153,9 +162,10 @@ nav ul li a {
     top: 0;
 } This is for the sliding arrow in the hourly box*/
 
-#hourly ul li {
+#hourly ul {
     display: inline-flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 footer {
