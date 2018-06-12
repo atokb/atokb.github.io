@@ -111,9 +111,11 @@ nav ul li a {
 }
 
 #temp-value {
+    display: flex;
+    justify-content: center;
     font-size: 5em;
     margin: 0;
-    margin-left: -5.3em;
+    margin-left: -5em;
 }
 
 #temps div {
@@ -165,7 +167,11 @@ nav ul li a {
 #hourly ul {
     display: inline-flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+#hourly ul li {
+    list-style: none;
 }
 
 footer {
@@ -175,4 +181,27 @@ footer {
 
 /* #3 - CSSS for larger screen sizes */
 
-@media screen and (min-width: 786px) {}
+@media screen and (min-width: 786px) {
+    #locInfo ul li {
+        display: flex;
+        font-size: 1em;
+    }
+    .hide {
+        visibility: visible;
+    }
+    #curWeather {
+        display: inline-flex;
+        justify-content: space-around;
+    }
+    #curWeather .tile {
+        background-color: rgba(200, 200, 200, .6);
+        margin: .2em auto;
+        border: 1px solid;
+        border-radius: 15px;
+    }
+    #hourly ul {
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+}
