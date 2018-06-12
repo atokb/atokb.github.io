@@ -148,11 +148,14 @@ nav ul li a {
     margin: .2em auto;
     border: 1px solid;
     border-radius: 15px;
-    position: relative;
 }
 
 #hourly h2 {
     padding: 0px 40px;
+}
+
+#hourly ul li {
+    list-style: none;
 }
 
 
@@ -168,10 +171,6 @@ nav ul li a {
     display: inline-flex;
     flex-flow: row wrap;
     justify-content: space-around;
-}
-
-#hourly ul li {
-    list-style: none;
 }
 
 footer {
