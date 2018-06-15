@@ -63,10 +63,11 @@ h6 {
 
 #page-header {
     display: flex;
+    justify-content: space-evenly;
 }
 
 #page-header #site-brand {
-    font-size: 6vw;
+    font-size: 5vw;
     margin-top: 8vh;
 }
 
@@ -78,14 +79,17 @@ nav ul {
     margin: 0;
     display: flex;
     list-style: none;
+}
+
+nav ul li {
+    display: flex;
     justify-content: space-around;
+    font-size: 3vw;
 }
 
 nav ul li a {
     text-decoration: none;
-    display: flex;
-    padding: 12px;
-    font-size: 3vw;
+    padding: 10px;
 }
 
 
@@ -111,17 +115,15 @@ nav ul li a {
 }
 
 #temp-value {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 5em;
-    margin: 0;
-    margin-left: -5em;
+    margin: 0px;
 }
 
 #temps div {
     display: flex;
     justify-content: center;
-    margin-left: -2em;
+    margin-left: -10vw;
 }
 
 #temps #high-temp {
@@ -132,12 +134,13 @@ nav ul li a {
     color: #0e89d5;
 }
 
-#wind {
+#wind-value {
     text-align: center;
+    font-size: 2em;
 }
 
-#wind h2 {
-    margin-left: -2.5em;
+#wind div {
+    text-align: center;
 }
 
 #summary {
@@ -151,29 +154,31 @@ nav ul li a {
 }
 
 #hourly h2 {
-    padding: 0px 40px;
+    text-align: center;
+}
+
+#hourly ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 #hourly ul li {
+    padding: 10px;
     list-style: none;
 }
 
 
 /* This is for the sliding arrow in the hourly box*/
 
-#hourly h2::before {
+
+/* #hourly h2::before {
     content: ">";
     font-size: 2em;
     position: absolute;
     right: 0;
     top: 0;
-}
-
-#hourly ul {
-    display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
+} */
 
 footer {
     margin-bottom: 2em;
@@ -183,40 +188,30 @@ footer {
 /* #3 - CSSS for larger screen sizes */
 
 @media screen and (min-width: 786px) {
-    nav ul {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        list-style: none;
-        justify-content: space-around;
+    nav {
+        position: relative;
+        border: 1px solid #000;
     }
-    #locInfo ul li {
+    nav ul li {
+        font-size: 2vw;
+    }
+    #curWeather {
         display: flex;
-        font-size: 1em;
+        margin: .2em auto;
+    }
+    #curWeather section {
+        padding: 0 8.6em;
+    }
+    #temps div {
+        margin-left: -1vw;
     }
     .hide {
         visibility: visible;
     }
-    #curWeather {
-        display: inline-flex;
-        justify-content: space-around;
+    #curWeather h2 {
+        text-align: center;
     }
-    #curWeather .tile {
-        background-color: rgba(200, 200, 200, .6);
-        margin: .2em auto;
-        border: 1px solid;
-        border-radius: 15px;
-    }
-    #temp-value {
-        display: flex;
-        justify-content: center;
-        font-size: 5em;
-        margin: 0;
-        margin-left: -5em;
-    }
-    #hourly ul {
-        display: inline-flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
+    #curWeather #temps p {
+        padding: 0 1vw;
     }
 }
