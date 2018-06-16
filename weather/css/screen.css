@@ -95,6 +95,10 @@ nav ul li a {
 
 /*main styling*/
 
+#locName {
+    font-size: 4vw;
+}
+
 #locInfo ul {
     padding: 0;
     margin: 0;
@@ -102,9 +106,10 @@ nav ul li a {
     list-style: none;
 }
 
-#locInfo ul li {
+#locInfo ul {
     display: flex;
-    font-size: 11px;
+    flex-flow: row nowrap;
+    font-size: 3vw;
 }
 
 #curWeather .tile {
@@ -123,7 +128,11 @@ nav ul li a {
 #temps div {
     display: flex;
     justify-content: center;
-    margin-left: -10vw;
+    margin-left: -2vw;
+}
+
+#temps p {
+    padding: 0 3vw;
 }
 
 #temps #high-temp {
