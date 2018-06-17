@@ -26,9 +26,12 @@
             <h1 class="main-title">Grand Canyon National Park</h1>
 
             <figure class="featured-image">
-                <img srcset="raw-images/cactus_1500_small.jpg,
-					raw-images/cactus_1500_medium.jpg 1.5x
-					raw-images/cactus_1500_.jpg 2x" src="raw-images/cactus_1500.jpg" alt="Picture from the Grand Canyon">
+                <picture>
+                    <source media="(min-width: 900px)" srcset="images/cactus_1500.jpg">
+                    <source media="(min-width: 600px)" srcset="images/cactus_1500_medium.jpg">
+                    <source media="(min-width: 200px)" srcset="images/cactus_1500_small.jpg">
+                    <img src="images/cactus_1500.jpg" alt="Picture from the Grand Canyon">
+                </picture>
 
                 <figcaption class="image-caption">
                     Fun in the Grand Canyon

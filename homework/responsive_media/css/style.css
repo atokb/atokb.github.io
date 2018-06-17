@@ -50,9 +50,10 @@ h1 {
 /*	Background Images - use with Small screens */
 
 .page-header {
-    background-image: url(//homework/responsive_media/raw-images/looking_down_400.jpg), url(//homework/responsive_media/raw-images/nps-logo_50.png);
+    background-image: url(../images/nps-logo_50.png), url(../images/looking_down_400.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-position: 100%, right;
+    background-size: 40px, 100%;
+    background-position: right;
 }
 
 
@@ -175,9 +176,10 @@ h1 {
     }
     /*	Background Images - Use with medium screens */
     .page-header {
-        background-image: url(//homework/responsive_media/raw-images/looking_down_800.jpg), url(//homework/responsive_media/raw-images/nps-logo_100.png);
+        background-image: url(../images/nps-logo_100.png), url(../images/looking_down_800.jpg);
         background-repeat: no-repeat, no-repeat;
-        background-position: 100%, right;
+        background-size: 70px, 100%;
+        background-position: right;
     }
     .page-nav {
         position: relative;
@@ -224,9 +226,10 @@ h1 {
     }
     /*	Background Images - Use with large screens */
     .page-header {
-        background-image: url(//homework/responsive_media/raw-images/looking_down_1200.jpg), url(//homework/responsive_media/raw-images/nps-logo_150.png);
+        background-image: url(../images/nps-logo_150.png), url(../images/looking_down_1200.jpg);
+        background-size: 110px, 100%;
         background-repeat: no-repeat, no-repeat;
-        background-position: 100%, right;
+        background-position: right;
     }
     .page-nav li {
         flex: 0 1 10%;
