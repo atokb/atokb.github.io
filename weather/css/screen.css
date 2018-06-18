@@ -30,6 +30,12 @@ nav {
     visibility: hidden;
 }
 
+#vid {
+    width: 100px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 
 /* 2.General Rules that apply to all devices */
 
@@ -222,5 +228,12 @@ footer {
     }
     #curWeather #temps p {
         padding: 0 1vw;
+    }
+    #dial {
+        position: relative;
+        text-align: center;
+    }
+    #pointer {
+        width: 100px;
     }
 }
