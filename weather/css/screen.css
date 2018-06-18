@@ -234,6 +234,10 @@ footer {
         text-align: center;
     }
     #pointer {
-        width: 100px;
+        height: 150px;
+        width: 150px;
+        background: no-repeat center/85% url(../img/weather-images/wind-pointer.png);
+        z-index: 100;
+        margin: -.6em auto 0;
     }
 }
