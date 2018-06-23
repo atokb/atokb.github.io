@@ -150,8 +150,11 @@ nav ul li a {
 }
 
 #wind-value {
+    position: absolute;
     text-align: center;
     font-size: 2em;
+    /* top: 2px;
+    right: 2px; */
 }
 
 #wind div {
@@ -232,6 +235,7 @@ footer {
     #dial {
         position: relative;
         text-align: center;
+        background: no-repeat;
     }
     #pointer {
         height: 150px;
