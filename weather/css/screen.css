@@ -215,7 +215,9 @@ footer {
     }
     #curWeather {
         display: flex;
-        margin: .2em auto;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        height: 425px;
     }
     #curWeather section {
         padding: 0 8.6em;
