@@ -6,10 +6,10 @@ console.log('My javascript is being read.');
 const temp = 31;
 const speed = 5;
 buildWC(speed, temp);
-let direction = "W";
+let direction = "S";
 windDial(direction);
 
-let weather = "snow";
+let weather = "rain";
 let currentWeather = getweather(weather);
 // Replace summary image
 changeSummaryImage(currentWeather);
