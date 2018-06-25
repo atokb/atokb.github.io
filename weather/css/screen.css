@@ -161,6 +161,52 @@ nav ul li a {
     text-align: center;
 }
 
+#dial {
+    height: 150px;
+    width: 150px;
+    background: no-repeat center/85% url('/weather/img/weather-images/wind-pointer.png');
+    z-index: 100;
+    margin: -.6em auto 0;
+}
+
+
+/*Rotate Dial*/
+
+.n {
+    transform: rotate(0deg);
+}
+
+.nw {
+    transform: rotate(45deg);
+}
+
+.w {
+    transform: rotate(90deg);
+}
+
+.sw {
+    transform: rotate(135deg);
+}
+
+.s {
+    transform: rotate(180deg);
+}
+
+.se {
+    transform: rotate(225deg);
+}
+
+.e {
+    transform: rotate(270deg);
+}
+
+.ne {
+    transform: rotateX(315deg);
+}
+
+
+/*****************************/
+
 #summary {
     text-align: center;
 }
