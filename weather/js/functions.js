@@ -74,3 +74,51 @@ function windDial(direction) {
             break;
     }
 }
+
+function getweather(weather) {
+    console.log(weather);
+    if ((weather.includes("clear")) || (weather.includes("cloudless"))) {
+        return "clear";
+    } else if ((weather.includes("clouds")) || (weather.includes("cloudy")) || (weather.includes("overcast"))) {
+        return "clouds";
+    } else if ((weather.includes("fog")) || (weather.includes("foggy"))) {
+        return "fog";
+    } else if ((weather.includes("rain")) || (weather.includes("rainy"))) {
+        return "rain";
+    } else if ((weather.includes("snow")) || (weather.includes("snowy"))) {
+        return "snow";
+    } else
+        return "clear";
+}
+
+//Change summary image
+
+function changeSummaryImage(currentWeather) {
+    console.log(currentWeather);
+
+    const curWeather = document.getElementById('curWeather');
+
+    switch (currentWeather) {
+        case "clear":
+            curWeather.setAttribute('class', 'clear');
+            break;
+
+        case "cloud":
+            curWeather.setAttribute('class', 'cloudy');
+            break;
+
+        case "rain":
+            curWeather.setAttribute('class', 'rainy');
+            break;
+
+        case "fog":
+            curWeather.setAttribute('class', 'foggy');
+            break;
+
+        case "snow":
+            curWeather.setAttribute('class', 'snowy');
+            break;
+
+    }
+
+}

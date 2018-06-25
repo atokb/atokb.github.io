@@ -37,6 +37,29 @@ nav {
 }
 
 
+/* Background pictures for summary */
+
+.clear {
+    background-image: url("/weather/img/weather-images/clear_400x800.jpg");
+}
+
+.cloudy {
+    background-image: url("/weather/img/weather-images/clouds_400x400.jpg");
+}
+
+.foggy {
+    background-image: url("/weather/img/weather-images/fog400x800.jpg");
+}
+
+.rainy {
+    background-image: url("/weather/img/weather-images/rain_400x800.jpg");
+}
+
+.snowy {
+    background-image: url("/weather/img/weather-images/snow_400x800.jpg");
+}
+
+
 /* 2.General Rules that apply to all devices */
 
 html {
@@ -204,6 +227,10 @@ nav ul li a {
     transform: rotateX(315deg);
 }
 
+#curWeather {
+    background-size: cover;
+}
+
 
 /*****************************/
 
@@ -291,5 +318,21 @@ footer {
         background: no-repeat center/85% url(../img/weather-images/wind-pointer.png);
         z-index: 100;
         margin: -.6em auto 0;
+    }
+    /* Background pictures for summary */
+    .clear {
+        background-image: url("/weather/img/weather-images/clear_1200x434.jpg");
+    }
+    .cloudy {
+        background-image: url("/weather/img/weather-images/clouds_1200x434.jpg");
+    }
+    .foggy {
+        background-image: url("/weather/img/weather-images/fog_1200x434.jpg");
+    }
+    .rainy {
+        background-image: url("/weather/img/weather-images/rain_1200x434.jpg");
+    }
+    .snowy {
+        background-image: url("/weather/img/weather-images/snow_1200x434.jpg");
     }
 }
