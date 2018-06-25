@@ -1,350 +1,324 @@
-/* CSS for Screened Devices
+    /* CSS for Screened Devices
 1.Mobile First CSS
 2.General Rules that apply to all devices
 3.Write larg(er) CSS using media queries 
 */
-
-
-/* 1.  Includes (fonts and supplementary stylesheets) */
-
-
-/* 1.1 Normalize Import */
-
-@import url('normalize.css');
-
-/*1.2 Google Font Import*/
-
-@import url('https://fonts.googleapis.com/css?family=Sansita');
-
-/* 1. Mobile First Rules */
-
-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    width: 100%;
-}
-
-.hide {
-    visibility: hidden;
-}
-
-#vid {
-    width: 100px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-
-/* Background pictures for summary */
-
-.clear {
-    background-image: url("/weather/img/weather-images/clear_400x800.jpg");
-}
-
-.cloudy {
-    background-image: url("/weather/img/weather-images/clouds_400x400.jpg");
-}
-
-.foggy {
-    background-image: url("/weather/img/weather-images/fog400x800.jpg");
-}
-
-.rainy {
-    background-image: url("/weather/img/weather-images/rain_400x800.jpg");
-}
-
-.snowy {
-    background-image: url("/weather/img/weather-images/snow_400x800.jpg");
-}
-
-
-/* 2.General Rules that apply to all devices */
-
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    margin: 0em 2em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Sansita, Eurostyle, sans-serif;
-}
-
-
-/*Header styling*/
-
-#page-header {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#page-header #site-brand {
-    font-size: 5vw;
-    margin-top: 8vh;
-}
-
-
-/*nav styling*/
-
-nav ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    display: flex;
-    justify-content: space-around;
-    font-size: 3vw;
-}
-
-nav ul li a {
-    text-decoration: none;
-    padding: 10px;
-}
-
-
-/*main styling*/
-
-#locName {
-    font-size: 4vw;
-}
-
-#locInfo ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    list-style: none;
-}
-
-#locInfo ul {
-    display: flex;
-    flex-flow: row nowrap;
-    font-size: 3vw;
-}
-
-#curWeather .tile {
-    background-color: rgba(200, 200, 200, .6);
-    margin: .2em auto;
-    border: 1px solid;
-    border-radius: 15px;
-}
-
-#temp-value {
-    text-align: center;
-    font-size: 5em;
-    margin: 0px;
-}
-
-#temps div {
-    display: flex;
-    justify-content: center;
-    margin-left: -2vw;
-}
-
-#temps p {
-    padding: 0 3vw;
-}
-
-#temps #high-temp {
-    color: red;
-}
-
-#temps #low-temp {
-    color: #0e89d5;
-}
-
-#wind-value {
-    position: absolute;
-    font-size: 1.6em;
-    right: 42%;
-    /* top: 10%; */
-}
-
-#wind div {
-    text-align: center;
-}
-
-#dial {
-    height: 150px;
-    width: 150px;
-    background: no-repeat center/85% url('/weather/img/weather-images/wind-pointer.png');
-    z-index: 100;
-    margin: -.6em auto 0;
-}
-
-
-/*Rotate Dial*/
-
-.n {
-    transform: rotate(0deg);
-}
-
-.nw {
-    transform: rotate(45deg);
-}
-
-.w {
-    transform: rotate(90deg);
-}
-
-.sw {
-    transform: rotate(135deg);
-}
-
-.s {
-    transform: rotate(180deg);
-}
-
-.se {
-    transform: rotate(225deg);
-}
-
-.e {
-    transform: rotate(270deg);
-}
-
-.ne {
-    transform: rotateX(315deg);
-}
-
-#curWeather {
-    background-size: cover;
-}
-
-
-/*****************************/
-
-#summary {
-    text-align: center;
-}
-
-#hourly {
-    margin: .2em auto;
-    border: 1px solid;
-    border-radius: 15px;
-}
-
-#hourly h2 {
-    text-align: center;
-}
-
-#hourly ul {
-    display: flex;
-    flex-flow: nowrap;
-    align-items: center;
-    overflow-x: scroll;
-    align-items: center;
-    list-style: none;
-    padding: .15em;
-    margin: .25em 0;
-    height: 40px;
-}
-
-#hourly ul li {
-    flex: 0 0 auto;
-    padding: 0 .25em;
-    border-right: 1px solid #000;
-}
-
-
-/* This is for the sliding arrow in the hourly box*/
-
-
-/* #hourly h2::before {
+    /* 1.  Includes (fonts and supplementary stylesheets) */
+    /* 1.1 Normalize Import */
+    
+    @import url('normalize.css');
+    /*1.2 Google Font Import*/
+    
+    @import url('https://fonts.googleapis.com/css?family=Sansita');
+    /* 1. Mobile First Rules */
+    
+    nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+    }
+    
+    .hide {
+        visibility: hidden;
+    }
+    
+    #vid {
+        width: 100px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    /* Background pictures for summary */
+    
+    .clear {
+        background-image: url("/weather/img/weather-images/clear_400x800.jpg");
+    }
+    
+    .cloudy {
+        background-image: url("/weather/img/weather-images/clouds_400x400.jpg");
+    }
+    
+    .foggy {
+        background-image: url("/weather/img/weather-images/fog400x800.jpg");
+    }
+    
+    .rainy {
+        background-image: url("/weather/img/weather-images/rain_400x800.jpg");
+    }
+    
+    .snowy {
+        background-image: url("/weather/img/weather-images/snow_400x800.jpg");
+    }
+    /* 2.General Rules that apply to all devices */
+    
+    html {
+        box-sizing: border-box;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    body {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        margin: 0em 2em;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: Sansita, Eurostyle, sans-serif;
+    }
+    /*Header styling*/
+    
+    #page-header {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #page-header #site-brand {
+        font-size: 5vw;
+        margin-top: 8vh;
+    }
+    /*nav styling*/
+    
+    nav ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style: none;
+    }
+    
+    nav ul li {
+        display: flex;
+        justify-content: space-around;
+        font-size: 3vw;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        padding: 10px;
+    }
+    /*main styling*/
+    
+    #locName {
+        font-size: 4vw;
+    }
+    
+    #locInfo ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style: none;
+    }
+    
+    #locInfo ul {
+        display: flex;
+        flex-flow: row nowrap;
+        font-size: 3vw;
+    }
+    
+    #curWeather .tile {
+        background-color: rgba(200, 200, 200, .6);
+        margin: .2em auto;
+        border: 1px solid;
+        border-radius: 15px;
+    }
+    
+    #temp-value {
+        text-align: center;
+        font-size: 5em;
+        margin: 0px;
+    }
+    
+    #temps div {
+        display: flex;
+        justify-content: center;
+        margin-left: -2vw;
+    }
+    
+    #temps p {
+        padding: 0 3vw;
+    }
+    
+    #temps #high-temp {
+        color: red;
+    }
+    
+    #temps #low-temp {
+        color: #0e89d5;
+    }
+    
+    #wind-value {
+        position: absolute;
+        font-size: 1.6em;
+        right: 42%;
+        top: 2%;
+    }
+    
+    #wind div {
+        text-align: center;
+    }
+    
+    #dial {
+        height: 150px;
+        width: 150px;
+        background: no-repeat center/85% url('/weather/img/weather-images/wind-pointer.png');
+        z-index: 100;
+        margin: -.6em auto 0;
+    }
+    /*Rotate Dial*/
+    
+    .n {
+        transform: rotate(0deg);
+    }
+    
+    .nw {
+        transform: rotate(45deg);
+    }
+    
+    .w {
+        transform: rotate(90deg);
+    }
+    
+    .sw {
+        transform: rotate(135deg);
+    }
+    
+    .s {
+        transform: rotate(180deg);
+    }
+    
+    .se {
+        transform: rotate(225deg);
+    }
+    
+    .e {
+        transform: rotate(270deg);
+    }
+    
+    .ne {
+        transform: rotateX(315deg);
+    }
+    
+    #curWeather {
+        background-size: cover;
+    }
+    /*****************************/
+    
+    #summary {
+        text-align: center;
+    }
+    
+    #hourly {
+        margin: .2em auto;
+        border: 1px solid;
+        border-radius: 15px;
+    }
+    
+    #hourly h2 {
+        text-align: center;
+    }
+    
+    #hourly ul {
+        display: flex;
+        flex-flow: nowrap;
+        align-items: center;
+        overflow-x: scroll;
+        align-items: center;
+        list-style: none;
+        padding: .15em;
+        margin: .25em 0;
+        height: 40px;
+    }
+    
+    #hourly ul li {
+        flex: 0 0 auto;
+        padding: 0 .25em;
+        border-right: 1px solid #000;
+    }
+    /* This is for the sliding arrow in the hourly box*/
+    /* #hourly h2::before {
     content: ">";
     font-size: 2em;
     position: absolute;
     right: 0;
     top: 0;
 } */
-
-footer {
-    margin-bottom: 2em;
-}
-
-
-/* #3 - CSSS for larger screen sizes */
-
-@media screen and (min-width: 786px) {
-    nav {
-        position: relative;
-        border: 1px solid #000;
+    
+    footer {
+        margin-bottom: 2em;
     }
-    nav ul li {
-        font-size: 2vw;
+    /* #3 - CSSS for larger screen sizes */
+    
+    @media screen and (min-width: 786px) {
+        nav {
+            position: relative;
+            border: 1px solid #000;
+        }
+        nav ul li {
+            font-size: 2vw;
+        }
+        #curWeather {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            height: 425px;
+        }
+        #curWeather section {
+            padding: 0 8.6em;
+        }
+        #temps div {
+            margin-left: -1vw;
+        }
+        .hide {
+            visibility: visible;
+        }
+        #curWeather h2 {
+            text-align: center;
+        }
+        #curWeather #temps p {
+            padding: 0 1vw;
+        }
+        #wind-value {
+            position: absolute;
+            font-size: 1.6em;
+            right: 42%;
+            top: 2%;
+        }
+        #dial {
+            position: relative;
+            text-align: center;
+            background: no-repeat;
+        }
+        #dial {
+            height: 150px;
+            width: 150px;
+            background: no-repeat center/85% url(../img/weather-images/wind-pointer.png);
+            z-index: 100;
+            margin: -.6em auto 0;
+        }
+        /* Background pictures for summary */
+        .clear {
+            background-image: url("/weather/img/weather-images/clear_1200x434.jpg");
+        }
+        .cloudy {
+            background-image: url("/weather/img/weather-images/clouds_1200x434.jpg");
+        }
+        .foggy {
+            background-image: url("/weather/img/weather-images/fog_1200x434.jpg");
+        }
+        .rainy {
+            background-image: url("/weather/img/weather-images/rain_1200x434.jpg");
+        }
+        .snowy {
+            background-image: url("/weather/img/weather-images/snow_1200x434.jpg");
+        }
     }
-    #curWeather {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        height: 425px;
-    }
-    #curWeather section {
-        padding: 0 8.6em;
-    }
-    #temps div {
-        margin-left: -1vw;
-    }
-    .hide {
-        visibility: visible;
-    }
-    #curWeather h2 {
-        text-align: center;
-    }
-    #curWeather #temps p {
-        padding: 0 1vw;
-    }
-    #wind-value {
-        position: absolute;
-        font-size: 1.6em;
-        right: 42%;
-        top: 10%;
-    }
-    #dial {
-        position: relative;
-        text-align: center;
-        background: no-repeat;
-    }
-    #dial {
-        height: 150px;
-        width: 150px;
-        background: no-repeat center/85% url(../img/weather-images/wind-pointer.png);
-        z-index: 100;
-        margin: -.6em auto 0;
-    }
-    /* Background pictures for summary */
-    .clear {
-        background-image: url("/weather/img/weather-images/clear_1200x434.jpg");
-    }
-    .cloudy {
-        background-image: url("/weather/img/weather-images/clouds_1200x434.jpg");
-    }
-    .foggy {
-        background-image: url("/weather/img/weather-images/fog_1200x434.jpg");
-    }
-    .rainy {
-        background-image: url("/weather/img/weather-images/rain_1200x434.jpg");
-    }
-    .snowy {
-        background-image: url("/weather/img/weather-images/snow_1200x434.jpg");
-    }
-}
