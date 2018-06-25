@@ -318,7 +318,7 @@ footer {
         text-align: center;
         background: no-repeat;
     }
-    #pointer {
+    #dial {
         height: 150px;
         width: 150px;
         background: no-repeat center/85% url(../img/weather-images/wind-pointer.png);
