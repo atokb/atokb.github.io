@@ -160,7 +160,7 @@
         position: absolute;
         font-size: 1.6em;
         right: 42%;
-        top: 90%;
+        top: 82%;
     }
     
     #wind div {
@@ -290,8 +290,8 @@
         #wind-value {
             position: absolute;
             font-size: 1.6em;
-            right: 42%;
-            top: 2%;
+            right: 47%;
+            top: 83%;
         }
         #dial {
             position: relative;
