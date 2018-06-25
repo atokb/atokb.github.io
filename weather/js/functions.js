@@ -124,11 +124,9 @@ function changeSummaryImage(currentWeather) {
             console.log(currentWeather);
             break;
 
-        case "snow":
+            //default
             curWeather.setAttribute('class', 'snowy');
             console.log(currentWeather);
-            break;
-
     }
 
 }
