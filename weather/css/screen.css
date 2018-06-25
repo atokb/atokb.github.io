@@ -174,10 +174,9 @@ nav ul li a {
 
 #wind-value {
     position: absolute;
-    text-align: center;
-    font-size: 2em;
-    /* top: 2px;
-    right: 2px; */
+    font-size: 1.6em;
+    right: 42%;
+    /* top: 10%; */
 }
 
 #wind div {
@@ -250,13 +249,20 @@ nav ul li a {
 
 #hourly ul {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: nowrap;
     align-items: center;
+    overflow-x: scroll;
+    align-items: center;
+    list-style: none;
+    padding: .15em;
+    margin: .25em 0;
+    height: 40px;
 }
 
 #hourly ul li {
-    padding: 10px;
-    list-style: none;
+    flex: 0 0 auto;
+    padding: 0 .25em;
+    border-right: 1px solid #000;
 }
 
 
