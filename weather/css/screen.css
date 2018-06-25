@@ -313,6 +313,12 @@ footer {
     #curWeather #temps p {
         padding: 0 1vw;
     }
+    #wind-value {
+        position: absolute;
+        font-size: 1.6em;
+        right: 42%;
+        top: 10%;
+    }
     #dial {
         position: relative;
         text-align: center;
