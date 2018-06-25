@@ -6,8 +6,13 @@ console.log('My javascript is being read.');
 const temp = 31;
 const speed = 5;
 buildWC(speed, temp);
-const direction = "W";
+let direction = "W";
 windDial(direction);
+
+let weather = "snow";
+let currentWeather = getweather(weather);
+// Replace summary image
+changeSummaryImage(currentWeather);
 
 
 
@@ -101,22 +106,27 @@ function changeSummaryImage(currentWeather) {
     switch (currentWeather) {
         case "clear":
             curWeather.setAttribute('class', 'clear');
+            console.log(currentWeather);
             break;
 
         case "cloud":
             curWeather.setAttribute('class', 'cloudy');
+            console.log(currentWeather);
             break;
 
         case "rain":
             curWeather.setAttribute('class', 'rainy');
+            console.log(currentWeather);
             break;
 
         case "fog":
             curWeather.setAttribute('class', 'foggy');
+            console.log(currentWeather);
             break;
 
         case "snow":
             curWeather.setAttribute('class', 'snowy');
+            console.log(currentWeather);
             break;
 
     }
