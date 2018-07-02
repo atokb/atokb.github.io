@@ -21,7 +21,7 @@
     }
     
     .hidden {
-        visibility: hidden;
+        display: none;
     }
     
     .hide {
@@ -264,7 +264,7 @@
     
     @media screen and (min-width: 786px) {
         .hidden {
-            visibility: hidden;
+            display: none;
         }
         nav {
             position: relative;
