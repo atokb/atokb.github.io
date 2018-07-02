@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./css/screen.css" media="screen">
 </head>
+<!--My name is Kenneth Ato Brown and I worked with Israel Silva and Brennan Hawkes-->
 
 <body>
     <header id="page-header">
@@ -24,8 +25,74 @@
             <li><a href="greenville.html" title="Go to the Greenville,SC page">Greenville,SC</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="hide">
+        <h1 id="locName">Current Location</h1>
+        <div id="locInfo">
+            <ul>
+                <li><b>Zip:</b>83237</li>
+                <li><b>| Elevation:</b>4968 ft.</li>
+                <li><b>| Location:</b>111.79, 42.07</li>
+            </ul>
+        </div>
+        <div id="curWeather">
+            <section id="temps" class="tile content-box">
+                <h2 class="hide">Temperature</h2>
+                <p id="temp-value"></p>
+                <div>
+                    <p id="high-temp" title="High Temperature"></p>
+                    <p id="low-temp" title="Low Temperature"></p>
+                </div>
+                <p id="feelTemp"></p>
+            </section>
 
+            </section>
+            <section id="wind" class="tile content-box">
+
+                <h2 class="hide">Wind</h2>
+                <p class="westMark"></p>
+                <div id="wind-speed">
+                    <div id="dial" class="sw"></div>
+                    <p id="wind-value"></p>
+                </div>
+                <div>
+                    <p><b>Direction:</b></p>
+                    <p><b>Gusts:</b></p>
+                </div>
+            </section>
+            <section id="summary" class="tile content-box">
+                <h2></h2>
+                <img src="img/weather-images/video.png" alt="video placeholder image" id="vid">
+            </section>
+        </div>
+        <section id="hourly" class="content-box">
+            <h2>Hourly Forecast</h2>
+            <ul>
+                <li>12am: 41&deg;F </li>
+                <li>1am: 41&deg;F </li>
+                <li>2am: 41&deg;F </li>
+                <li>3am: 41&deg;F </li>
+                <li>4am: 41&deg;F </li>
+                <li>5am: 41&deg;F </li>
+                <li>6am: 42&deg;F </li>
+                <li>7am: 44&deg;F </li>
+                <li>8am: 44&deg;F </li>
+                <li>9am: 46&deg;F </li>
+                <li>10am: 49&deg;F </li>
+                <li>11am: 51&deg;F </li>
+                <li>12am: 55&deg;F </li>
+                <li>1pm: 58&deg;F </li>
+                <li>2pm: 62&deg;F </li>
+                <li>3pm: 64&deg;F </li>
+                <li>4pm: 64&deg;F </li>
+                <li>5pm: 62&deg;F </li>
+                <li>6pm: 61&deg;F </li>
+                <li>7pm: 60&deg;F </li>
+                <li>8pm: 59&deg;F </li>
+                <li>9pm: 58&deg;F </li>
+                <li>10pm: 52&deg;F </li>
+                <li>11pm: 48&deg;F </li>
+            </ul>
+        </section>
     </main>
     <footer id="page-footer">
         &copy;2018 Weather Site
