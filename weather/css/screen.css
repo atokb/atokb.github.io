@@ -259,6 +259,9 @@
     /* #3 - CSSS for larger screen sizes */
     
     @media screen and (min-width: 786px) {
+        .hidden {
+            visibility: hidden;
+        }
         nav {
             position: relative;
             border: 1px solid #000;
