@@ -82,13 +82,13 @@ function windDial(direction) {
 
 function getweather(weather) {
     console.log(weather);
-    if ((weather.includes("clouds")) || (weather.includes("cloudy")) || (weather.includes("overcast"))) {
+    if ((weather.toLowerCase().includes("clouds")) || (weather.toLowerCase().includes("cloudy")) || (weather.toLowerCase().includes("overcast"))) {
         return "clouds";
-    } else if ((weather.includes("fog")) || (weather.includes("foggy"))) {
+    } else if ((weather.toLowerCase().includes("fog")) || (weather.toLowerCase().includes("foggy"))) {
         return "fog";
-    } else if ((weather.includes("rain")) || (weather.includes("rainy"))) {
+    } else if ((weather.toLowerCase().includes("rain")) || (weather.toLowerCase().includes("rainy"))) {
         return "rain";
-    } else if ((weather.includes("snow")) || (weather.includes("snowy"))) {
+    } else if ((weather.toLowerCase().includes("snow")) || (weather.toLowerCase().includes("snowy"))) {
         return "snow";
     } else
         return "clear";
@@ -128,3 +128,6 @@ function changeSummaryImage(currentWeather) {
     }
 
 }
+
+//My API Key
+//6AJcb7j8tgO5hcNbBdZ6devtA5PhLi8ok
