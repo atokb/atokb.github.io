@@ -226,3 +226,79 @@ function getHourly(locData) {
 
 //My API Key
 //6AJcb7j8tgO5hcNbBdZ6devtA5PhLi8ok
+
+//Calculate current weather
+function buildPage(locData) {
+    const TEMP = locData.currentTemp;
+    const SPEED = locData.windSpeed;
+    console.log(TEMP, SPEED);
+    buildWC(TEMP, SPEED);
+    const DIRECTION = locData.windDirection;
+    windDial(DIRECTION);
+    const CONDITION = locData.summary;
+    let curCondition = getCondition(CONDITION);
+
+    //Calculate location information
+    const CITY = document.getElementById('locName');
+    const ZIP = document.getElementById('zip');
+    const ELEVATION = document.getElementById('elevation');
+    const LOCATION = document.getElementById('location');
+
+    let city = locData.name;
+    let state = locData.stateAbbr;
+    let zip = locData.postal;
+    let elevation = locData.elevation;
+    let location = locData.geoposition;
+
+    console.log("City: " + city, "State: " + state, "Zip: " + zip, "Elev: " + elevation, "Location: " + location);
+
+    CITY.innerHTML = city + ", " + state;
+    ZIP.innerHTML = zip;
+    ELEVATION.innerHTML = elevation;
+    LOCATION.innerHTML = location;
+
+    //Calculate weather information
+    const TEMPERATURE = document.getElementById('temp-value');
+    const HIGH = document.getElementById('high-temp');
+    const LOW = document.getElementById('low-temp');
+    const MARK = document.getElementById('mark');
+    const WINDSPEED = document.getElementById('wind-value');
+    const DIR = document.getElementById('direction');
+    const GUSTS = document.getElementById('gusts');
+    const CURCOND = document.getElementById('condition');
+
+    let high = locData.pastHigh;
+    let low = locData.pastLow;
+    let gusts = locData.windGust;
+
+    console.log("High: " + high, "Low: " + low, "Gusts: " + gusts);
+
+    TEMPERATURE.innerHTML = TEMP;
+    HIGH.innerHTML = high;
+    LOW.innerHTML = low;
+    WINDSPEED.innerHTML = SPEED;
+    MARK.innerHTML = DIRECTION;
+    DIR.innerHTML = DIRECTION;
+    GUSTS.innerHTML = gusts;
+    CURCOND.innerHTML = CONDITION;
+
+    const HIDE = document.getElementById('hidden');
+    const STATUS = document.getElementById('status');
+
+    HIDE.setAttribute("class", "show");
+}
+
+// formats a value into a 12h AM/PM time string
+/*
+function format_time(hour) {
+    if (hour > 23) {
+        hour -= 24;
+    }
+    let amPM = (hour > 11) ? "pm" : "am";
+    if (hour > 12) {
+        hour -= 12;
+    } else if (hour == 0) {
+        hour = "12";
+    }
+    return hour + amPM;
+} */ // end format_time function

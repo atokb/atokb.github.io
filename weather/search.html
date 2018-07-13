@@ -3,12 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Current Location</title>
-    <meta name="description" content="Current Location page">
+    <title>Franklin Weather</title>
+    <meta name="description" content="Franklin weather page">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./css/screen.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/weather/css/screen.css" media="screen">
 </head>
-<!--My name is Kenneth Ato Brown and I worked with Israel Silva and Brennan Hawkes-->
 
 <body>
     <header id="page-header">
@@ -18,51 +17,59 @@
 
     <nav id="main-nav">
         <ul>
-            <li><a href="../index.html" title="Go to home page">Home</a></li>
+            <li><a href="/weather/index.html" title="Go to home page">Home</a></li>
             <li><a href="current_location.html" title="Go to Current Location page">Current</a></li>
-            <li><a href="#" title="Make a search">Search</a></li>
+            <li><a href="search.html" title="Make a search">Search</a></li>
             <li><a href="franklin.html" title="Go to the Franklin,ID page">Franklin,ID</a></li>
             <li><a href="greenville.html" title="Go to the Greenville,SC page">Greenville,SC</a></li>
         </ul>
     </nav>
-    <p id="status"></p>
-    <main id="hidden" class="hide">
-        <h1 id="locName">Current Location</h1>
+
+    <section>
+        <form method="get" action="https://www.accuweather.com/en/search-locations" id="searchform">
+            <input type="search" name="query" id="query">
+            <input type="submit" name="submit" value="Search" id="send">
+        </form>
+        <div id="searchResults" class=""></div>
+    </section>
+
+    <main class="hidden">
+        <h1 id="locName">Franklin, Idaho</h1>
         <div id="locInfo">
             <ul>
-                <li><b>Zip:</b><span id="zip"></span></li>
-                <li><b>| Elevation:</b><span id="elevation"></span></li>
-                <li><b>| Location:</b><span id="location"></span></li>
+                <li><b>Zip:</b>83237</li>
+                <li><b>| Elevation:</b>4968 ft.</li>
+                <li><b>| Location:</b>111.79, 42.07</li>
             </ul>
         </div>
         <div id="curWeather">
             <section id="temps" class="tile content-box">
                 <h2 class="hide">Temperature</h2>
-                <p id="temp-value"></p>
+                <p id="temp-value">55 &deg;F</p>
                 <div>
-                    <p id="high-temp" title="High Temperature"></p>
-                    <p id="low-temp" title="Low Temperature"></p>
+                    <p id="high-temp" title="High Temperature">64</p>
+                    <p id="low-temp" title="Low Temperature">41</p>
                 </div>
                 <p id="feelTemp"></p>
             </section>
 
+            </section>
             <section id="wind" class="tile content-box">
 
                 <h2 class="hide">Wind</h2>
-                <p class="westMark" id="mark"></p>
+                <p class="westMark">W</p>
                 <div id="wind-speed">
                     <div id="dial" class="sw"></div>
-                    <p id="wind-value"></p>
+                    <p id="wind-value">5mph</p>
                 </div>
                 <div>
-                    <p><b>Direction:</b><span id="direction"></span></p>
-                    <p><b>Gusts:</b><span id="gusts"></span></p>
+                    <p><b>Direction:</b> SW</p>
+                    <p><b>Gusts:</b> 0mph</p>
                 </div>
             </section>
             <section id="summary" class="tile content-box">
-                <h2 id="condition"></h2>
+                <h2>Rain</h2>
                 <img src="img/weather-images/video.png" alt="video placeholder image" id="vid">
-                <p><b>Summary</b></p>
             </section>
         </div>
         <section id="hourly" class="content-box">
@@ -95,13 +102,12 @@
             </ul>
         </section>
     </main>
+
     <footer id="page-footer">
-        Attribution &copy;Accu Weather <img src="img/weather-images/AW_RGB_Small.png" alt="accu Weather logo">
+        &copy;2018 Weather Site
     </footer>
-
     <script src="js/functions.js"></script>
-    <script src="js/geo_loc.js"></script>
-
+    <script src="js/search.js"></script>
 </body>
 
 </html>

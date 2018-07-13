@@ -20,7 +20,7 @@
         width: 100%;
     }
     
-    .hidden {
+    #hidden {
         display: none;
     }
     
@@ -78,7 +78,7 @@
     h4,
     h5,
     h6 {
-        font-family: Sansita, Eurostyle, sans-serif;
+        font-family: "Sansita", Arial, sans-serif;
     }
     /*Header styling*/
     
@@ -263,7 +263,7 @@
     /* #3 - CSSS for larger screen sizes */
     
     @media screen and (min-width: 786px) {
-        .hidden {
+        #hidden {
             display: none;
         }
         nav {
