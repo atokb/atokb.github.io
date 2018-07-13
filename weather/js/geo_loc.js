@@ -4,7 +4,7 @@
 getGeoLocation();
 //URL to request city data using Lat and Long
 //https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=6AJcb7j8tgO5hcNbBdZ6devtA5PhLi8o&q=43.822409773939285%2C-111.78684763650027
-const TEMP = data[0].Temperature.Imperial.Value;
+
 
 
 
