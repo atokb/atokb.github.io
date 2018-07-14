@@ -1,12 +1,6 @@
-//These functions will work together to get weather information for the current location and populate a web page with the data.
 'use strict';
 // Call the function to get our location
 getGeoLocation();
-//URL to request city data using Lat and Long
-//https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=6AJcb7j8tgO5hcNbBdZ6devtA5PhLi8o&q=43.822409773939285%2C-111.78684763650027
-
-
-
 
 // Gets longitude and latitude of current location
 function getGeoLocation() {

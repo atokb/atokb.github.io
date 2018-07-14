@@ -14,11 +14,6 @@ let currentWeather = getweather(weather);
 // Replace summary image
 changeSummaryImage(currentWeather);
 
-
-
-
-
-
 // Calculate the Windchill
 function buildWC(speed, temp) {
     const feelTemp = document.getElementById('feelTemp');
@@ -132,7 +127,9 @@ function changeSummaryImage(currentWeather) {
 
 function getCode(LOCALE) {
     const API_KEY = '6AJcb7j8tgO5hcNbBdZ6devtA5PhLi8ok';
+    console.log(API_KEY);
     const URL = 'https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=' + API_KEY + '&q=' + LOCALE;
+    console.log(URL);
     fetch(URL)
         .then(response => response.json())
         .then(function(data) {
@@ -229,6 +226,7 @@ function getHourly(locData) {
 
 //Calculate current weather
 function buildPage(locData) {
+    console.log(locData);
     const TEMP = locData.currentTemp;
     const SPEED = locData.windSpeed;
     console.log(TEMP, SPEED);
