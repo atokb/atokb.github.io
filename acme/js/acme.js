@@ -1,4 +1,4 @@
-const JSONDATA = "acme/js/acme.json";
+const JSONDATA = "/acme/js/acme.json";
 let jsonData;
 getData(JSONDATA);
 
