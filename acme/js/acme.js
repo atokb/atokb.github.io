@@ -1,6 +1,6 @@
 console.log('My javascript is being read.');
 
-let URL = "../js/acme.json";
+let URL = "../acme/js/acme.json";
 getData(URL);
 
 
