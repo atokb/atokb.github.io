@@ -19,8 +19,6 @@ body {
     margin-bottom: 0;
     padding: 0;
     font-family: "Sansita", arial, sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 body>div {
@@ -37,8 +35,7 @@ body>div {
 /*small Header settings*/
 
 #pageHeader {
-    font-family: Sansita;
-    /*changes site name and city name to Sansita font*/
+    font-family: "Sansita";
     display: flex;
     align-items: center;
     padding-bottom: 10px;
@@ -114,8 +111,6 @@ body>div {
     display: flex;
     justify-content: flex-end;
     background-image: url(/acme/images/site/feature.jpg);
-    background-repeat: no-repeat;
-    padding-bottom: 100%;
 }
 
 #desc-heading {
