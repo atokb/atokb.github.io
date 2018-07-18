@@ -28,7 +28,7 @@ body>div {
 }
 
 #home-backgnd {
-    background-image: url("/acme/images/site/background.jpg");
+    background: url("/acme/images/site/background.jpg");
 }
 
 
@@ -110,7 +110,8 @@ body>div {
     color: #990033;
     display: flex;
     justify-content: flex-end;
-    background-image: url("/acme/images/site/feature.jpg");
+    background: url("/acme/images/site/feature.jpg");
+    background-size: cover;
 }
 
 #desc-heading {
@@ -215,8 +216,8 @@ body>div {
     text-align: center;
 }
 
-#product-pic {
-    width: auto;
+#product-picture {
+    height: 200px;
     align-self: center;
 }
 
@@ -408,6 +409,11 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
+    #prod-page-design {
+        display: flex;
+        flex-flow: row;
+        padding: 1em;
+    }
     #left-prod {
         display: flex;
         flex-direction: column;
@@ -417,6 +423,10 @@ footer {
     }
     #prod-name {
         text-align: left;
+    }
+    #product-picture {
+        height: 60%;
+        align-self: center;
     }
     #right-product {
         display: flex;
