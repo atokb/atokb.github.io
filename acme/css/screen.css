@@ -5,7 +5,7 @@
 
 /* Sansita font from Google Fonts */
 
-@import url('https://fonts.googleapis.com/css?family=Sansita');
+@import url('https://fonts.googleapis.com/css?family=Helvetica');
 
 /* Add Normalize Code -  */
 
@@ -18,7 +18,7 @@
 body {
     margin-bottom: 0;
     padding: 0;
-    font-family: "Sansita", arial, sans-serif;
+    font-family: "Helvetica", arial, sans-serif;
 }
 
 body>div {
@@ -35,7 +35,7 @@ body>div {
 /*small Header settings*/
 
 #pageHeader {
-    font-family: "Sansita";
+    font-family: "Helvetica", arial, sans-serif;
     display: flex;
     align-items: center;
     padding-bottom: 10px;
@@ -216,7 +216,7 @@ body>div {
 }
 
 #product-pic {
-    width: 87%;
+    width: auto;
     align-self: center;
 }
 
@@ -239,9 +239,17 @@ body>div {
 
 #prod-price {
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 600;
     color: #de2226;
-    text-align: center;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#price-text {
+    font-size: 50px;
+    font-weight: 600;
+    color: #de2226;
+    text-align: left;
     margin-top: 10px;
 }
 
@@ -261,9 +269,7 @@ footer {
     body {
         margin-bottom: 0;
         padding: 0;
-        /* ditto for padding */
-        font-family: helvetica arial sans-serif;
-        /* changes main font to helvetica */
+        font-family: "Helvetica", arial, sans-serif;
         background-image: url("/acme/images/site/background.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -274,9 +280,8 @@ footer {
         margin: 0 auto;
         background-color: #ffffff;
     }
-    /*Header Settings*/
     #pageHeader {
-        font-family: Sansita;
+        font-family: "Helvetica", arial, sans-serif;
         display: flex;
         align-items: center;
         padding-bottom: 10px;
@@ -285,7 +290,6 @@ footer {
     #siteLogo {
         width: 35%;
     }
-    /*Large settings for navigation*/
     #pageNav {
         bottom: 0;
         left: 0;
@@ -313,7 +317,6 @@ footer {
         text-decoration: none;
         color: #FFF;
     }
-    /*Main settings*/
     .show-home {
         display: contents;
     }
@@ -327,8 +330,6 @@ footer {
         margin-top: 0;
         margin-bottom: 0;
     }
-    /* Large Home page settings*/
-    /*Description*/
     #desc-text {
         color: #990033;
         display: flex;
@@ -351,7 +352,6 @@ footer {
         width: 100%;
         margin-bottom: 0px;
     }
-    /*Recipes and reviews for large screen*/
     #rec-reviews {
         display: flex;
         justify-content: space-between;
@@ -360,7 +360,6 @@ footer {
         margin-right: auto;
         flex-direction: row;
     }
-    /*Recipes settings for large screen*/
     #rec-heading {
         padding-left: 30px;
         margin-bottom: 0px;
@@ -391,7 +390,6 @@ footer {
         border-right-width: 30px;
         border-color: #808080;
     }
-    /*Reviews settings for large screen*/
     #prod-review {
         display: flex;
         flex-direction: column;
@@ -405,16 +403,10 @@ footer {
     .rev-list {
         font-size: inherit;
     }
-    /*Large content page settings at media query*/
     .show-content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-    #prod-page {
-        display: flex;
-        flex-flow: row;
-        padding: 1em;
     }
     #left-prod {
         display: flex;
@@ -443,12 +435,18 @@ footer {
     }
     #prod-price {
         font-size: 80px;
-        font-weight: 800;
+        font-weight: 600;
         color: #de2226;
         text-align: left;
         margin-top: auto;
     }
-    /*footer for large screen*/
+    #price-text {
+        font-size: 80px;
+        font-weight: 600;
+        color: #de2226;
+        text-align: left;
+        margin-top: auto;
+    }
     #footer {
         border-top: 3px solid #000;
         margin-left: 10px;
