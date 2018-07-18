@@ -110,7 +110,7 @@ body>div {
     color: #990033;
     display: flex;
     justify-content: flex-end;
-    background-image: url(/acme/images/site/feature.jpg);
+    background-image: url("/acme/images/site/feature.jpg");
 }
 
 #desc-heading {
@@ -264,7 +264,7 @@ footer {
         /* ditto for padding */
         font-family: helvetica arial sans-serif;
         /* changes main font to helvetica */
-        background-image: url(/acme/images/site/background.jpg);
+        background-image: url("/acme/images/site/background.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         font-size: 20px;
@@ -333,7 +333,7 @@ footer {
         color: #990033;
         display: flex;
         justify-content: flex-end;
-        background-image: url(/acme/images/site/feature.jpg);
+        background-image: url("/acme/images/site/feature.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         padding-bottom: 140px;
