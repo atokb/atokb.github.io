@@ -21,7 +21,7 @@
    
    body>div {
        max-width: 55em;
-       margin: 10px;
+       margin: auto 10px;
        background-color: #ffffff;
    }
    
