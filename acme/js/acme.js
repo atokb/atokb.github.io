@@ -73,7 +73,7 @@ function populate(clink) {
             } else {
                 clicked.name = "Home"
             }
-            console.log(clicked.name + ": this is what the user clicked")
+            console.log(clicked.name + ": this is what was clicked")
 
             //grabs all the necessary elements to prepare to display
             let heading = document.getElementById("prod-name");
