@@ -92,7 +92,7 @@ function populate(clink) {
             manufacturer.innerHTML = clicked.manufacturer;
             reviews.innerHTML = clicked.reviews;
             price.innerHTML = clicked.price;
-            document.getElementById("acme-title").innerHTML = "Acme, Inc | " + clicked.name;
+            document.getElementById("acme-title").innerHTML = "Acme | " + target.id;
 
         }).catch(error => console.log('There was an error: ', error))
 
