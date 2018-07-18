@@ -411,6 +411,11 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
+    #prod-page {
+        display: flex;
+        flex-flow: row;
+        padding: 1em;
+    }
     #left-prod {
         display: flex;
         flex-direction: column;
