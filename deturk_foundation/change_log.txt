@@ -1,0 +1,16 @@
+Version 1.0.0
+i) Intial version Release
+
+Version 1.2.1
+i) fixed all issues as per Reviewer pointed out.
+
+Version 1.2.2
+i) Copyright attribution fixed.
+ii) Fixed escaping functions.
+
+Version 1.2.3
+i) We have fixed one of the remaining issue.
+
+
+
+
