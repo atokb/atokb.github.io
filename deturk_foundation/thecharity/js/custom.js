@@ -82,7 +82,7 @@
         size: 156,
         thickness: 3,
         fill: {
-            gradient: ["#c49102", "#ff3600"]
+            gradient: ["#c49102", "#ffc30b"]
         }
     }).on('circle-animation-progress', function(event, progress) {
         $(this).find('strong').html(Math.round(83 * progress) + '<i>%</i>');
@@ -94,7 +94,7 @@
         size: 156,
         thickness: 3,
         fill: {
-            gradient: ["#c49102", "#ff3600"]
+            gradient: ["#c49102", "#ffc30b"]
         }
     }).on('circle-animation-progress', function(event, progress) {
         $(this).find('strong').html(Math.round(100 * progress) + '<i>%</i>');
@@ -106,7 +106,7 @@
         size: 156,
         thickness: 3,
         fill: {
-            gradient: ["#c49102", "#ff3600"]
+            gradient: ["#c49102", "#ffc30b"]
         }
     }).on('circle-animation-progress', function(event, progress) {
         $(this).find('strong').html(Math.round(75 * progress) + '<i>%</i>');
@@ -118,7 +118,7 @@
         size: 156,
         thickness: 3,
         fill: {
-            gradient: ["#c49102", "#ff3600"]
+            gradient: ["#c49102", "#ffc30b"]
         }
     }).on('circle-animation-progress', function(event, progress) {
         $(this).find('strong').html(Math.round(65 * progress) + '<i>%</i>');
